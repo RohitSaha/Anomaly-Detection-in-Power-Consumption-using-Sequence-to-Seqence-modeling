@@ -8,3 +8,5 @@ testing.py : checking accuracy.
 more_training.py : further training done using pre-trained weight file and different optimizers.
 
 training_data.npz : Consists training data with keywords train_X and train_Y.
+
+log_file : Keeps track of all the results and updates done to the model.
