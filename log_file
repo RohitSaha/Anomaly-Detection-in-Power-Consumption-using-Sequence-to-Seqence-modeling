@@ -1,0 +1,22 @@
+21st March, 2017
+
+Using Keras with Tensorflow as backend.
+2 LSTM layers with 256 nodes in each layer. 
+Dropout used : 0.7
+
+Combinations of optimizers and loss functions used : 
+1. Adam, Categorical cross entropy
+2. RMSprop, Mean Squared Error
+3. SGD, Mean Squared Error
+
+Training info : 
+1. Initial training was done using Adam optimizer and Categorical cross entropy loss function. 
+   Number of epochs = 400, batch size = 128
+   Loss value after 400 epochs = 0.956543
+   Weight file : weights-improvement=393-0.956543.hdf5 (File added to the repo)
+   
+2. More training was done using pre-trained weight file. RMSprop and SGD optimizers were used along with MSE loss function. 
+   Error further reduced from 0.950654 to 0.023081.
+   Number of epochs = 10, batch size = 10
+   Loss value after 10 epochs = 0.023081
+   Weight file : mt-weights-improvement=10-0.023081.hdf5 (File added to the repo)
