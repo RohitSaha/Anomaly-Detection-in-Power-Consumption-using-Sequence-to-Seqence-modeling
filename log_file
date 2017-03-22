@@ -18,7 +18,7 @@ Training info :
    
 2. More training was done using pre-trained weight file. RMSprop and SGD optimizers were used along with MSE loss function. 
    Error further reduced from 0.950654 to 0.023081.
-   Number of epochs = 10, batch size = 10
+   Number of epochs = 10, batch size = 128
    Loss value after 10 epochs = 0.023081
    Weight file : mt-weights-improvement=10-0.023081.hdf5 (File added to the repo)
    Accuracy achieved on testing : 81.58% 
