@@ -1,5 +1,6 @@
 Weight files : 
  
 1. weights-improvement=393-0.956543.hdf5 : 400 epochs, Adam & Entropy
-2. weights_400_improvement=250-0.783262.hdf5 : 250 + (400) epochs, Adam & Entropy
-3. mt-weights-improvement=10-0.023081.hdf5 : 10 + (400) epochs, RMSProp & MSE
+2. mt-weights-improvement=10-0.023081.hdf5 : 10 + (400) epochs, RMSProp & MSE
+3. weights_400_improvement=250-0.783262.hdf5 : 250 + (400) epochs, Adam & Entropy
+4. mt-650-weights-improvement=10-0.019535.hdf5 : 10 + (650) epochs, SGD & MSE
