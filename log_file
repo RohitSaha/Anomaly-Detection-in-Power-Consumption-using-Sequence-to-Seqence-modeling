@@ -47,3 +47,21 @@ Training info :
    Loss values after 650 epochs = 0.783262
    Weight file : weights_400_improvement=250-0.783262.hdf5 (File added to the repo)
    Accuracy achieved on testing : 86.746495%
+
+
+24 March, 2017
+
+Using Keras with Tensorflow as backend.
+Architecture used : 
+(i)  LSTM -> Dropout (0.7) -> LSTM -> Dropout (0.7) -> Dense (19) -> Softmax
+
+Optimizer and loss function used : 
+1. SGD, Mean Squared Error
+
+Training info : 
+1. Initial training was done using Architecture (i) and pre-trained weight file : weights_400_improvement=250-0.783262.hdf5
+   Additional epochs = 10 
+   Total epochs = 660 (650 + 10)
+   Loss value after 10 epochs = 0.019535
+   Weight file : mt-650-weights-improvement=10-0.019535.hdf5
+   Accuracy achieved on testing : 87.375070%
