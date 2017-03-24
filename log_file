@@ -22,3 +22,28 @@ Training info :
    Loss value after 10 epochs = 0.023081
    Weight file : mt-weights-improvement=10-0.023081.hdf5 (File added to the repo)
    Accuracy achieved on testing : 81.58% 
+
+
+23 March, 2017
+
+Using Keras with Tensorflow as backend.
+Architectures used : 
+(i)  LSTM -> Dropout (0.7) -> LSTM -> Dropout (0.7) -> Dense (256) -> Sigmoid -> Dense (128) -> Sigmoid -> Dense (64) -> Sigmoid ->
+     Dense (32) -> Sigmoid -> Dense (19) -> Softmax
+(ii) LSTM -> Dropout (0.7) -> LSTM -> Dropout (0.7) -> Dense (19) -> Softmax
+
+Optimizer and loss function used : 
+1. Adam, Categorical Cross Entropy
+
+Training info :
+1. Initial training was done using Architecture (i) for 400 epochs, batch size = 128.
+   Loss value after 400 epochs = 1.347491
+   Weight file : weights-improvement=398-1.347491.hdf5
+   Accuracy achieved on testing : 4.68%
+
+2. More training was done using Architecture (ii) and pre-trained weight file : weights-improvement=393-0.956543.hdf5
+   Additional epochs = 250
+   Total epochs = 650 (400 + 250)
+   Loss values after 650 epochs = 0.783262
+   Weight file : weights_400_improvement=250-0.783262.hdf5 (File added to the repo)
+   Accuracy achieved on testing : 86.746495%
